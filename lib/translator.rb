@@ -3,6 +3,7 @@ require "pry"
 
  def load_library(file_path)
    library = YAML.load_file(file_path)
+    binding.pry
    result = {"get_meaning" => {}, "get_emoticon" => {}}
   
   library.each do |meaning, emoticons|
@@ -10,7 +11,7 @@ require "pry"
     result["get_emoticon"][emoticons[0]] = emoticons[1]
   end
   result
-   binding.pry
+  
 end
 
 
