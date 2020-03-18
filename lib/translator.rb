@@ -30,4 +30,3 @@ def get_english_meaning(file_path = './lib/emoticons.yml', japanese_emoticon)
     "Sorry, that emoticon was not found"
   end
 end
-end
